@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kreatek Holding — Disrupting the Future</title>
+  <meta name="description" content="Kreatek es un holding empresarial disruptivo que integra inteligencia artificial, marketing estratégico y desarrollo de software para impulsar negocios en Latinoamérica." />
+  <meta name="keywords" content="Kreatek, holding, AI, inteligencia artificial, marketing, software development, Latinoamérica, kreatek.lat" />
+  <meta property="og:title" content="Kreatek Holding — Disrupting the Future" />
+  <meta property="og:description" content="Holding empresarial disruptivo con brazo ejecutor de IA, marketing estratégico y desarrollo de software." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+</head>
+<body>
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader__logo">KREATEK</div>
+    <div class="loader__bar">
+      <div class="loader__progress" id="loader-progress"></div>
+    </div>
+    <div class="loader__percent" id="loader-percent">0%</div>
+  </div>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <a href="#" class="nav__logo" data-text="KREATEK">KREATEK <span>.LAT</span></a>
+    <div class="nav__links" id="nav-links">
+      <a href="#ecosystem" class="nav__link" data-hover>Ecosistema</a>
+      <a href="#manifesto" class="nav__link" data-hover>Manifiesto</a>
+      <a href="#dna" class="nav__link" data-hover>ADN</a>
+      <a href="#contact" class="nav__link" data-hover>Contacto</a>
+      <a href="#contact" class="nav__cta" data-hover>Hablemos →</a>
+    </div>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+
+    <div class="hero__badge" id="hero-badge">
+      <span class="pulse"></span>
+      BUILDING THE FUTURE // 2024
+    </div>
+
+    <h1 class="hero__title" id="hero-title">
+      <span class="gradient-text glitch" data-text="KREATEK">KREATEK</span><br/>
+      <span class="outline-text">HOLDING</span>
+    </h1>
+
+    <p class="hero__subtitle" id="hero-subtitle">
+      No seguimos tendencias. Las <strong>creamos</strong>. Un holding diseñado para 
+      romper los moldes tradicionales con <strong>inteligencia artificial</strong>, 
+      <strong>estrategia disruptiva</strong> y <strong>tecnología de vanguardia</strong>.
+    </p>
+
+    <div class="hero__actions" id="hero-actions">
+      <a href="#ecosystem" class="btn btn--primary" data-hover>
+        <span>Explorar Ecosistema</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+      <a href="#manifesto" class="btn btn--ghost" data-hover>Nuestro Manifiesto</a>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span class="marquee__item">GROWTH PARTNER HOUSE <span class="dot"></span></span>
+      <span class="marquee__item">MAKE YOURSELF <span class="dot"></span></span>
+      <span class="marquee__item">LATAM KNOW <span class="dot"></span></span>
+      <span class="marquee__item">MOVA WORKS <span class="dot"></span></span>
+      <span class="marquee__item">NEXGENDYNAMIC AI <span class="dot"></span></span>
+      <span class="marquee__item">QUICK DROP <span class="dot"></span></span>
+      <span class="marquee__item">KREATEK DEV <span class="dot"></span></span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee__item">GROWTH PARTNER HOUSE <span class="dot"></span></span>
+      <span class="marquee__item">MAKE YOURSELF <span class="dot"></span></span>
+      <span class="marquee__item">LATAM KNOW <span class="dot"></span></span>
+      <span class="marquee__item">MOVA WORKS <span class="dot"></span></span>
+      <span class="marquee__item">NEXGENDYNAMIC AI <span class="dot"></span></span>
+      <span class="marquee__item">QUICK DROP <span class="dot"></span></span>
+      <span class="marquee__item">KREATEK DEV <span class="dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ===================== ECOSYSTEM ===================== -->
+  <section class="section ecosystem" id="ecosystem">
+    <div class="section__header reveal">
+      <span class="section__label">// Nuestro Ecosistema</span>
+      <h2 class="section__title">Una Estructura Diseñada<br/>Para <span class="gradient-text">Dominar</span></h2>
+      <p class="section__desc">
+        Cada empresa es un engranaje estratégico. Juntas, forman una máquina 
+        imparable de crecimiento e innovación.
+      </p>
+    </div>
+
+    <div class="ecosystem__wrapper">
+      <div class="hierarchy">
+
+        <!-- LEVEL 1: HOLDING -->
+        <div class="reveal-scale">
+          <span class="level-label">NIVEL 01 — HOLDING</span>
+        </div>
+        <div class="holding-card reveal-scale tilt-card" data-tilt id="card-holding">
+          <div class="holding-card__icon">⚡</div>
+          <div class="holding-card__name">KREATEK</div>
+          <div class="holding-card__type">HOLDING EMPRESARIAL LLC</div>
+        </div>
+
+        <!-- Connector -->
+        <div class="hierarchy__connector reveal"></div>
+
+        <!-- LEVEL 2: CORE COMPANIES -->
+        <div class="reveal">
+          <span class="level-label">NIVEL 02 — EMPRESAS CORE</span>
+        </div>
+        <div class="companies-row">
+          <div class="company-card company-card--gph reveal delay-1 tilt-card" data-tilt id="card-gph">
+            <div class="company-card__icon">📈</div>
+            <div class="company-card__name">Growth Partner House</div>
+            <div class="company-card__desc">Aceleración de negocios y partnership estratégico para escalar empresas</div>
+          </div>
+          <div class="company-card company-card--mys reveal delay-2 tilt-card" data-tilt id="card-mys">
+            <div class="company-card__icon">🚀</div>
+            <div class="company-card__name">Make Yourself</div>
+            <div class="company-card__desc">Transformación personal y profesional con metodologías disruptivas</div>
+          </div>
+          <div class="company-card company-card--lk reveal delay-3 tilt-card" data-tilt id="card-lk">
+            <div class="company-card__icon">🌎</div>
+            <div class="company-card__name">Latam Know</div>
+            <div class="company-card__desc">Inteligencia de mercado y conocimiento especializado para LATAM</div>
+          </div>
+          <div class="company-card company-card--mw reveal delay-4 tilt-card" data-tilt id="card-mw">
+            <div class="company-card__icon">⚙️</div>
+            <div class="company-card__name">Mova Works</div>
+            <div class="company-card__desc">Operaciones y logística empresarial de alto rendimiento</div>
+          </div>
+        </div>
+
+        <!-- Connector -->
+        <div class="hierarchy__connector reveal" style="margin-top: var(--space-lg);"></div>
+
+        <!-- LEVEL 3: EXECUTOR ARMS -->
+        <div class="reveal">
+          <span class="level-label">NIVEL 03 — BRAZOS EJECUTORES</span>
+        </div>
+        <div class="executor-row">
+          <div class="executor-card executor-card--nex reveal delay-1 tilt-card" data-tilt id="card-nex">
+            <div class="executor-card__icon">🤖</div>
+            <span class="executor-card__tag">AI EXECUTOR</span>
+            <div class="executor-card__name">NexGenDynamic AI</div>
+            <div class="executor-card__desc">Motor de inteligencia artificial que potencia todas las operaciones del holding</div>
+          </div>
+          <div class="executor-card executor-card--qd reveal delay-2 tilt-card" data-tilt id="card-qd">
+            <div class="executor-card__icon">⚡</div>
+            <span class="executor-card__tag">MARKETING EXECUTOR</span>
+            <div class="executor-card__name">Quick Drop</div>
+            <div class="executor-card__desc">Agencia de marketing externa que ejecuta estrategias de alto impacto</div>
+          </div>
+        </div>
+
+        <!-- Connector -->
+        <div class="hierarchy__connector reveal" style="margin-top: var(--space-lg);"></div>
+
+        <!-- LEVEL 4: SOFTWARE DEVELOPMENT -->
+        <div class="reveal">
+          <span class="level-label">NIVEL 04 — DESARROLLO</span>
+        </div>
+        <div class="dev-card reveal-scale tilt-card" data-tilt id="card-dev">
+          <div class="dev-card__icon">{ }</div>
+          <div class="dev-card__name">Kreatek Developing Software</div>
+          <div class="dev-card__type">SOFTWARE & TECHNOLOGY BASE</div>
+        </div>
+
+      </div>
+
+      <!-- Stats -->
+      <div class="stats reveal">
+        <div class="stat">
+          <div class="stat__number" data-count="7">0</div>
+          <div class="stat__label">Empresas</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="4">0</div>
+          <div class="stat__label">Niveles</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="3">0</div>
+          <div class="stat__label">Verticales</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number" data-count="1">0</div>
+          <div class="stat__label">Visión</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MANIFESTO ===================== -->
+  <section class="section manifesto" id="manifesto">
+    <div class="manifesto__content reveal">
+      <span class="section__label">// Manifiesto</span>
+      <blockquote class="manifesto__quote">
+        "No construimos empresas. Construimos <em>ecosistemas</em> 
+        que se <strong>alimentan entre sí</strong>, se <strong>potencian</strong> 
+        y crean un efecto dominó de <em>innovación imparable</em>."
+      </blockquote>
+      <p class="section__desc">
+        Kreatek nació de una convicción simple: los holdings tradicionales están 
+        obsoletos. Nosotros integramos IA como columna vertebral, marketing como 
+        oxígeno y tecnología como sistema nervioso. El resultado: una máquina 
+        empresarial que no solo crece, sino que evoluciona.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== DNA ===================== -->
+  <section class="section" id="dna">
+    <div class="section__header reveal">
+      <span class="section__label">// Nuestro ADN</span>
+      <h2 class="section__title">Lo Que Nos <span class="gradient-text">Define</span></h2>
+    </div>
+
+    <div class="dna-grid">
+      <div class="dna-card reveal delay-1">
+        <span class="dna-card__number">01</span>
+        <h3 class="dna-card__title">IA como Core</h3>
+        <p class="dna-card__text">
+          NexGenDynamic AI no es un complemento: es nuestra espina dorsal. 
+          Cada decisión, cada proceso, cada optimización pasa por nuestro 
+          motor de inteligencia artificial.
+        </p>
+      </div>
+      <div class="dna-card reveal delay-2">
+        <span class="dna-card__number">02</span>
+        <h3 class="dna-card__title">Ecosistema Simbiótico</h3>
+        <p class="dna-card__text">
+          Nuestras empresas no son islas. Son nodos interconectados donde 
+          el output de una se convierte en el input de otra, creando un 
+          ciclo de crecimiento exponencial.
+        </p>
+      </div>
+      <div class="dna-card reveal delay-3">
+        <span class="dna-card__number">03</span>
+        <h3 class="dna-card__title">Ejecución Implacable</h3>
+        <p class="dna-card__text">
+          Con Quick Drop como brazo de marketing y Kreatek Dev como base 
+          tecnológica, pasamos de la idea a la ejecución en tiempo récord. 
+          Sin excusas. Sin demoras.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section cta-section" id="contact">
+    <div class="cta-section__bg"></div>
+    <div class="reveal">
+      <span class="section__label">// Siguiente Paso</span>
+      <h2 class="section__title">
+        ¿Listo Para Ser Parte<br/>Del <span class="gradient-text">Futuro</span>?
+      </h2>
+      <p class="section__desc" style="margin: 0 auto;">
+        Si tu empresa necesita escalar con inteligencia artificial, 
+        estrategia real y tecnología de verdad, hablemos.
+      </p>
+      <div class="cta-section__actions">
+        <a href="mailto:hello@kreatek.lat" class="btn btn--primary" data-hover>
+          Contactar →
+        </a>
+        <a href="#ecosystem" class="btn btn--ghost" data-hover>
+          Ver Ecosistema
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__logo">KREATEK</div>
+    <div class="footer__links">
+      <a href="#ecosystem" class="footer__link">Ecosistema</a>
+      <a href="#manifesto" class="footer__link">Manifiesto</a>
+      <a href="#dna" class="footer__link">ADN</a>
+      <a href="#contact" class="footer__link">Contacto</a>
+    </div>
+    <p class="footer__copy">© 2024 KREATEK HOLDING — KREATEK.LAT — ALL RIGHTS RESERVED</p>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="particles.js"></script>
+  <script src="animations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
