@@ -698,6 +698,69 @@ button {
   color: var(--color-text-muted);
 }
 
+.holding-card__founder {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  position: relative;
+}
+
+.founder-line {
+  width: 40px;
+  height: 1px;
+  background: var(--gradient-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.founder-title {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.founder-title em {
+  font-style: normal;
+  font-weight: 600;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.founder-role {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-neon-cyan);
+  padding: 2px 12px;
+  border: 1px solid rgba(0, 245, 255, 0.2);
+  border-radius: var(--radius-full);
+  background: rgba(0, 245, 255, 0.05);
+}
+
+/* --- Manifesto Author --- */
+.manifesto__author {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2xl);
+  letter-spacing: 0.03em;
+}
+
+.manifesto__author em {
+  font-style: normal;
+  font-weight: 600;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* --- Company Cards --- */
 .companies-row {
   display: grid;
