@@ -788,10 +788,10 @@ button {
 /* --- Executor Arms Section --- */
 .executor-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-lg);
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   padding-top: var(--space-xl);
 }
 
@@ -825,6 +825,9 @@ button {
 .executor-card--nex::before { background: radial-gradient(circle at 50% 0%, rgba(77, 124, 255, 0.15), transparent 60%); }
 .executor-card--nex:hover { border-color: rgba(77, 124, 255, 0.4); box-shadow: 0 0 30px rgba(77, 124, 255, 0.15); }
 
+.executor-card--sp::before { background: radial-gradient(circle at 50% 0%, rgba(220, 20, 60, 0.15), transparent 60%); }
+.executor-card--sp:hover { border-color: rgba(220, 20, 60, 0.4); box-shadow: 0 0 30px rgba(220, 20, 60, 0.15); }
+
 .executor-card--qd::before { background: radial-gradient(circle at 50% 0%, rgba(255, 107, 53, 0.15), transparent 60%); }
 .executor-card--qd:hover { border-color: rgba(255, 107, 53, 0.4); box-shadow: 0 0 30px rgba(255, 107, 53, 0.15); }
 
@@ -844,6 +847,7 @@ button {
 }
 
 .executor-card--nex .executor-card__icon { background: linear-gradient(135deg, rgba(77, 124, 255, 0.2), rgba(77, 124, 255, 0.05)); color: var(--color-neon-blue); }
+.executor-card--sp .executor-card__icon { background: linear-gradient(135deg, rgba(220, 20, 60, 0.2), rgba(220, 20, 60, 0.05)); color: #dc143c; }
 .executor-card--qd .executor-card__icon { background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 107, 53, 0.05)); color: var(--color-neon-orange); }
 
 .executor-card__name {
@@ -867,6 +871,11 @@ button {
 .executor-card--nex .executor-card__tag {
   background: rgba(77, 124, 255, 0.15);
   color: var(--color-neon-blue);
+}
+
+.executor-card--sp .executor-card__tag {
+  background: rgba(220, 20, 60, 0.15);
+  color: #dc143c;
 }
 
 .executor-card--qd .executor-card__tag {
