@@ -1453,7 +1453,7 @@ button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
-  color: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.25);
   display: flex;
   align-items: center;
   gap: var(--space-xl);
@@ -1608,7 +1608,11 @@ button {
   }
   
   .hero {
-    padding: var(--space-5xl) var(--space-lg) var(--space-3xl);
+    padding: var(--space-4xl) var(--space-md) var(--space-2xl);
+  }
+  
+  .section {
+    padding: var(--space-3xl) var(--space-md);
   }
   
   .cursor-dot,
@@ -1625,7 +1629,15 @@ button {
   
   .stats {
     grid-template-columns: 1fr;
-    padding: var(--space-lg);
+    padding: var(--space-md);
+  }
+  
+  .section {
+    padding: var(--space-2xl) var(--space-sm);
+  }
+  
+  .hero {
+    padding: var(--space-3xl) var(--space-sm) var(--space-xl);
   }
   
   .hero__actions {
