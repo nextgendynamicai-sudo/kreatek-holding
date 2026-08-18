@@ -428,6 +428,11 @@ button {
   background-clip: text;
 }
 
+.neon-blue-text {
+  color: #00f5ff;
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.6), 0 0 20px rgba(0, 245, 255, 0.4);
+}
+
 .hero__title .outline-text {
   -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.3);
   -webkit-text-fill-color: transparent;
