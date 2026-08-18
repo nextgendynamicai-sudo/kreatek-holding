@@ -842,6 +842,9 @@ button {
 .company-card--mw::before { background: radial-gradient(circle at 50% 0%, rgba(0, 255, 136, 0.12), transparent 60%); }
 .company-card--mw:hover { border-color: rgba(0, 255, 136, 0.3); box-shadow: 0 0 30px rgba(0, 255, 136, 0.1); }
 
+.company-card--qbs::before { background: radial-gradient(circle at 50% 0%, rgba(255, 204, 0, 0.12), transparent 60%); }
+.company-card--qbs:hover { border-color: rgba(255, 204, 0, 0.3); box-shadow: 0 0 30px rgba(255, 204, 0, 0.1); }
+
 .company-card__icon {
   width: 48px;
   height: 48px;
@@ -858,6 +861,7 @@ button {
 .company-card--mys .company-card__icon { background: linear-gradient(135deg, rgba(179, 71, 255, 0.2), rgba(179, 71, 255, 0.05)); color: var(--color-neon-purple); }
 .company-card--lk .company-card__icon { background: linear-gradient(135deg, rgba(255, 0, 170, 0.2), rgba(255, 0, 170, 0.05)); color: var(--color-neon-magenta); }
 .company-card--mw .company-card__icon { background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 255, 136, 0.05)); color: var(--color-neon-green); }
+.company-card--qbs .company-card__icon { background: linear-gradient(135deg, rgba(255, 204, 0, 0.2), rgba(255, 204, 0, 0.05)); color: #ffcc00; }
 
 .company-card__name {
   font-family: var(--font-display);
