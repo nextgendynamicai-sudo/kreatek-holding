@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/propuestapizza", "destination": "/propuestapizza/index.html" },
+    { "source": "/propuestapizza/", "destination": "/propuestapizza/index.html" }
+  ]
+}
